@@ -10,9 +10,10 @@ every repository settled. Claude Code, Cursor, and Codex all take part. No MCP s
 | Runtime | [cyberlegion](https://github.com/cyberuni/cyberlegion), [cyber-mux](https://github.com/cyberuni/cyber-mux) |
 | Communication | [cynapse](https://github.com/cyberuni/cynapse) |
 | Process | [cyber-truss](https://github.com/cyberuni/cyber-truss), [cyber-sdd](https://github.com/cyberuni/cyber-sdd) |
+| Tooling | [upx](https://github.com/cyber-civitas/upx) |
 
-Each package ships on its own and is useful on its own. The repositories live in
-[cyberuni](https://github.com/cyberuni).
+Each package ships on its own and is useful on its own. Most repositories live in
+[cyberuni](https://github.com/cyberuni); upx lives here.
 
 **Read more:** [cyber-civitas.github.io](https://cyber-civitas.github.io): the architecture, the
 fleet vocabulary, every component's status, and the decisions that span packages.
