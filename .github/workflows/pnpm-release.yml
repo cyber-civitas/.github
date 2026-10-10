@@ -125,13 +125,14 @@ jobs:
           BUILD_SCRIPT: ${{ inputs.build-script }}
 
       # changesets/action v2 renamed its inputs (version -> version-script,
-      # publish -> publish-script, commit -> commit-message). The old names are
-      # ignored without an error, and the action runs with no publish script.
+      # publish -> publish-script, commit -> commit-message, title -> pr-title).
+      # It rejects `title` outright, but older v2 releases ignored the other old
+      # names without an error and ran with no publish script.
       - name: Open the Version Packages PR or publish
         id: changesets
         uses: changesets/action@ae32849d5ba541f9ae29e40e22a623bc13562f51 # v2.1.2
         with:
           commit-message: 'chore: version packages'
-          title: 'chore: version packages'
+          pr-title: 'chore: version packages'
           version-script: ${{ inputs.version-script }}
           publish-script: ${{ inputs.publish-script }}
